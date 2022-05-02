@@ -13,7 +13,10 @@ Recommendation (out of 5), CGPA (out of 10) and the research experience (0 or 1)
 ## 4. Flask App :
 As we’ll expose the created model as a web API to be consumed by the client/client APIs, 
 we’d do it using the flask framework.
+
 The flow of our flask app will be :
+
+
 ![new](https://user-images.githubusercontent.com/52250527/166314231-c6aa1ff1-2e7a-4bef-b439-ca2747836779.png)
 
 ## 5. SETUP
