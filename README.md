@@ -30,5 +30,8 @@ $ pip install -r requirements.txt
 c. Run app
 $ python main.py
 
+![Web capture_3-5-2022_14230_127 0 0 1](https://user-images.githubusercontent.com/52250527/166324548-429a2069-7aa9-43a9-9d82-dd212571dd26.jpeg)
+
+
 ## 6. Deployment to G-cloud :
 -------Refer to Gcloud.txt-----------<https://github.com/AnupCloud/Linear_Regression/blob/master/Gcloud.txt>
