@@ -19,16 +19,43 @@ The flow of our flask app will be :
 
 ![new](https://user-images.githubusercontent.com/52250527/166314231-c6aa1ff1-2e7a-4bef-b439-ca2747836779.png)
 
-## 5. SETUP
-a. Create Environment :-
-$ conda create -n admission python=3.6 -y
-$ conda activate admission
 
-b. Run requirements.txt
-$ pip install -r requirements.txt
+## 5. Run Locally
 
-c. Run app
-$ python main.py
+Clone the project
+
+```bash
+  git clone https://github.com/AnupCloud/Linear_Regression.git
+```
+Create Environment using Conda
+
+```bash
+  conda create -n admission python=3.6 -y
+```
+activate Environment
+```bash
+  conda activate admission
+```
+
+Go to the project directory
+
+```bash
+  cd Linear_Regression
+```
+
+Install dependencies
+
+```bash
+  pip install -r requirements.txt
+```
+
+Start the server
+
+```bash
+  python app.py
+```
+
+
 
 ![Web capture_3-5-2022_14230_127 0 0 1](https://user-images.githubusercontent.com/52250527/166324548-429a2069-7aa9-43a9-9d82-dd212571dd26.jpeg)
 
