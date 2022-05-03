@@ -66,5 +66,6 @@ Here admission_project is the Docker image ,admission_project_test is the Docker
 8888 is the Docker container port,3000 is flask app port and latest is the -t(tag) used to build Docker image.
 
 
-## 7. Deployment to G-cloud :
--------Refer to Gcloud.txt-----------<https://github.com/AnupCloud/Linear_Regression/blob/master/Gcloud.txt>
+## 7. Deployment to GCP
+Please refer to the Gcloud.txt 
+[Link](https://github.com/AnupCloud/Linear_Regression/blob/master/Gcloud.txt)
