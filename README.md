@@ -52,7 +52,7 @@ Install dependencies
 Start the server
 
 ```bash
-  python app.py
+  python main.py
 ```
 
 
@@ -65,7 +65,7 @@ Start the server
 Flask app
 ```bash
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port='3000')
+    app.run(host='0.0.0.0', port='8001')
 ```
 
 Create a Dockerfile in your Python app project
@@ -73,24 +73,24 @@ Create a Dockerfile in your Python app project
 ```bash
 FROM python:3.6.9
 
-WORKDIR /app
+WORKDIR /main
 
-COPY . /app
+COPY . /main
 RUN pip install -r requirements.txt
 
 ENTRYPOINT ["python"]
 
-CMD ["app.py"]
+CMD ["main.py"]
 ```
 You can then build and run the Docker image:
 ```bash
 $ docker build -t admission_project .
 ```
 ```bash
-$ docker run -it --name admission_project_test -p 8888:3000 admission_project:latest
+$ docker run -it --name admission_project_test -p 8888:8001 admission_project:latest
 ```
 Here admission_project is the Docker image ,admission_project_test is the Docker container name,
-8888 is the Docker container port,3000 is flask app port and latest is the -t(tag) used to build Docker image.
+8888 is the Docker container port,8001 is flask app port and latest is the -t(tag) used to build Docker image.
 
 
 ## 7. Deployment to GCP
