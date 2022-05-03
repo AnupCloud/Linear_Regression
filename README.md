@@ -30,7 +30,7 @@ Clone the project
 Create Environment using Conda
 
 ```bash
-  conda create -n admission python=3.6 -y
+  conda create -n admission python=3.6.9 -y
 ```
 activate Environment
 ```bash
