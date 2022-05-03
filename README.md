@@ -33,5 +33,38 @@ $ python main.py
 ![Web capture_3-5-2022_14230_127 0 0 1](https://user-images.githubusercontent.com/52250527/166324548-429a2069-7aa9-43a9-9d82-dd212571dd26.jpeg)
 
 
-## 6. Deployment to G-cloud :
+## 6. Docker Deploy
+
+Flask app
+```bash
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port='3000')
+```
+
+Create a Dockerfile in your Python app project
+
+```bash
+FROM python:3.6.9
+
+WORKDIR /app
+
+COPY . /app
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["python"]
+
+CMD ["app.py"]
+```
+You can then build and run the Docker image:
+```bash
+$ docker build -t admission_project .
+```
+```bash
+$ docker run -it --name admission_project_test -p 8888:3000 admission_project:latest
+```
+Here admission_project is the Docker image ,admission_project_test is the Docker container name,
+8888 is the Docker container port,3000 is flask app port and latest is the -t(tag) used to build Docker image.
+
+
+## 7. Deployment to G-cloud :
 -------Refer to Gcloud.txt-----------<https://github.com/AnupCloud/Linear_Regression/blob/master/Gcloud.txt>
